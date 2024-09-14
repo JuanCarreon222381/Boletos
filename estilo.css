@@ -1,0 +1,114 @@
+
+main {
+    width: 1366px;
+    height: 2000px;
+    width: 1366px;
+    height: 2000px;
+    background-image: linear-gradient(135deg,#e6fafb,#ccf5f7,#b3eff3,#50e2e1);
+    background-size: 500%;
+    animation: fanimado 10s infinite;
+    margin: 0 auto;
+}
+header {
+    width: 1366px;
+    height: 200px;
+    
+    background-image: url(Imagenes/Recurso\ 13.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+nav {
+    width: 1366px;
+    height: 50px;
+    background-color: #F0EBEB;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+nav a {
+    color: #87BEB9;
+    text-decoration: none;
+    padding: 15px;
+    font-family: "Oleo Script", system-ui;
+    transition: .5s;
+    
+}
+nav a:hover{
+    background-color: #326173;
+    transform: scale(1.2);
+}
+section {
+    width: 1366px;
+    height: 1500px;
+    text-align: center;
+    color: #04c4c2;
+    font-family: "Oleo Script", system-ui;
+    font-size: 66px;
+    padding: 10px;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    width: 500px;
+    position: relative;
+}
+img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgb(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+    font-size: large;
+
+}
+.content:hover {
+    opacity: 1;
+}
+.content h1{
+    font-size: 45px;
+    color: #04c4c2;
+    margin-bottom: 15px;
+}
+.content p{
+    font-size: 19px;
+    color: #fff;
+}
+.content > * {
+    transform: translateY(25px);
+    transition: transform 0.6s;
+    text-decoration: none;
+    color: #326173;
+    
+}
+.content:hover > *{
+    transform: translateY(0px);
+}
+@keyframes fanimado{
+    0%{
+        background-position: 0%,50%;
+    }
+    50%{
+        background-position: 100%,50%;
+    }
+    100%{
+        background-position: 0%,50%;
+    }
+ }
